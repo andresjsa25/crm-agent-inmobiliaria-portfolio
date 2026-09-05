@@ -1,0 +1,30 @@
+{
+  "_nota": "Plantilla de configuración por cliente. Los valores reales de cada instancia (calendario, spreadsheet, catálogo) NUNCA van en este archivo ni en control de versiones — se cargan en un .env o config privado, siguiendo el esquema de docs/config-schema.md.",
+
+  "CLIENT_NAME": "Nombre de la inmobiliaria",
+  "AGENT_NAME": "CRM Agent Inmobiliaria",
+  "CONTACT_EMAIL": "contacto@inmobiliaria-ejemplo.com",
+  "MODEL": "claude-haiku-4-5",
+  "SYSTEM_PROMPT_FILE": "prompts/system.txt",
+  "APPROVAL_REQUIRED": false,
+  "NOTIFICATION_CHANNEL": null,
+  "TIMEZONE": "America/Argentina/Buenos_Aires",
+  "LANGUAGE": "es-AR",
+  "COST_LIMIT_MONTHLY": null,
+
+  "CALENDAR_ID": "tu-calendar-id-aqui@group.calendar.google.com",
+  "BUSINESS_HOURS_START": 10,
+  "BUSINESS_HOURS_END": 18,
+  "APPOINTMENT_DURATION_MIN": 60,
+
+  "LEADS_SPREADSHEET_ID": "tu-spreadsheet-id-aqui",
+  "LEADS_TAB": "leads-chatbot-inmobiliaria",
+  "CATALOG_CSV_URL": "https://docs.google.com/spreadsheets/d/e/tu-catalogo-publicado/pub?output=csv",
+
+  "PORT": 3010,
+
+  "_credenciales_no_incluidas_aqui": [
+    "ANTHROPIC_API_KEY (va en .env)",
+    "credentials/google-calendar-service-account.json (va fuera de control de versiones)"
+  ]
+}
